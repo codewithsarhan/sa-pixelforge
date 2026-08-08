@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="amazon.css">
+
+    <!-- Font Awesome CDN Tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav id="navBar">
+        <div id="img-div">
+            <img src="img/amazonlogo.png" alt="" id="img">
+        </div>
+
+        <div id="deliver-div">
+            <p>Deliver to</p>
+            <a href="#">
+                <i class="fa-solid fa-location-dot"></i><span>Pakistan</span>
+            </a>
+        </div>
+
+        <div id="search-main-div">
+            <div>
+                <select id="category" name="category">
+                    <option value="">-</option>
+                    <option value="All-Department">All Department</option>
+                    <option value="Arts-Craft">Art Crafts</option>
+                    <option value="Books">Books</option>
+                    <option value="Baby">Baby</option>
+                    <option value="Boys-Fashion">Boys'Fashion</option>
+                    <option value="Girls-Fashions">Girls'Fashion</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Watch">Watch</option>
+                </select>
+            </div>
+
+            <div id="search-bar">
+                <input type="search" placeholder="Search Amazon">
+            </div>
+
+            <div id="search-icon-div">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div id="language-div">
+            <form>
+                <select id="country" name="country">
+                    <option value="us" selected>EN</option>
+                    <option value="pk">PK</option>
+                    <option value="ca">EN</option>
+                    <option value="ae">AR</option>
+                    <option value="in">HI</option>
+                    <option value="de">DE</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="sign-in">
+            <p>Hello,sign in</p>
+            <a href="">Account & Lists <span><i class="fa-solid fa-angle-down"></i></span></a>
+        </div>
+
+        <div id="order-div">
+            <p>Returns</p>
+            <span>& Orders</span>
+        </div>
+
+        <div id="cart-div">
+            <span id="cart-item-quantity">0</span>
+            <img src="img/cart.png" alt="" height="50px">
+            <span id="cart-name">Cart</span>
+        </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <!-- Sub Nav-Bar Start -->
+    <nav id="sub-NavBar">
+        <a href="#" id="all-sec"><i class="fa-solid fa-bars"></i><span>All</span></a>
+        <a href="#">Today's Deals</a>
+        <a href="#">Prime Video</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">Sell</a>
+        <a href="#">Coustumer Service</a>
+        <a href="#">Registry</a>
+    </nav>
+    <!-- Sub Navbar End -->
+
+    
+ <!-- Background Carousel Start -->
+<div class="carousel-container">
+    <div class="carousel-track">
+        <img src="img/bkimage.png" alt="Banner 1">
+        <img src="img/bkimage2.png" alt="Banner 2">
+        <img src="img/bkimage3.png" alt="Banner 3">
+        <img src="img/bkimage4.png" alt="Banner 4">
+    </div>
+    <!-- Bottom Bottom Gradient Fade (Amazon Look) -->
+    <div class="carousel-overlay"></div>
+</div>
+<!-- Background Carousel End -->
+
+
+
+    <!-- Section 1: Products Row -->
+    <div class="products-row">
+
+        <!-- Card 1: Gaming -->
+        <div class="single-card">
+            <h1>Get Your Game On</h1>
+            <img src="img/pr2.png" alt="">
+            <br>
+            <a href="#">Shop Gaming</a>
+        </div>
+
+        <!-- Card 2: Student -->
+        <div class="single-card">
+            <h1>Must-have of every <br> student</h1>
+            <img src="img/pr1.png" alt="">
+            <br>
+            <a href="#">Shop Back To School</a>
+        </div>
+
+        <!-- Card 3: Fashion Grid -->
+        <div class="grid-card">
+            <h1>Shop Fashion for less</h1>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/4in1.png" alt="">
+                    <p>Jeans under $50</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in2.png" alt="">
+                    <p>Tops under $25</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in3.png" alt="">
+                    <p>Dresses Under $30</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in4.png" alt="">
+                    <p>Shoes Under</p>
+                </div>
+            </div>
+            <a href="#">See All Details</a>
+        </div>
+
+        <!-- Card 4: School Supplies Grid -->
+        <div class="grid-card">
+            <h1>Must-have school <br> supplies</h1>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/2nd4in1.png" alt="">
+                    <p>Backpacks</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in2.png" alt="">
+                    <p>Electronics</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in3.png" alt="">
+                    <p>Stationery</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in4.png" alt="">
+                    <p>Fashion</p>
+                </div>
+            </div>
+            <a href="#">See All Details</a>
+        </div>
+
+    </div>
+
+    <!-- Section 2: Products Row -->
+    <div class="products-rows">
+
+        <!-- Card 5: Home Arrivals -->
+        <div class="grid-card">
+            <h1>New Home Arrival Under <br> $50</h1>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/4in1.png" alt="">
+                    <p>Jeans under $50</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in2.png" alt="">
+                    <p>Tops under $25</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in3.png" alt="">
+                    <p>Dresses Under $30</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in4.png" alt="">
+                    <p>Shoes Under</p>
+                </div>
+            </div>
+            <a href="#">Show the latest from Home</a>
+        </div>
+
+        <!-- Card 6: Kitchen Appliances -->
+        <div class="grid-card">
+            <h1>Top categories in Kitchen <br> appliances</h1>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/2nd4in1.png" alt="">
+                    <p>Backpacks</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in2.png" alt="">
+                    <p>Electronics</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in3.png" alt="">
+                    <p>Stationery</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in4.png" alt="">
+                    <p>Fashion</p>
+                </div>
+            </div>
+            <a href="#">Explore products in Kitchen</a>
+        </div>
+
+        <!-- Card 7: Fashion Deals -->
+        <div class="grid-card">
+            <h1>Shop Fashion for less</h1>
+            <br>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/4in1.png" alt="">
+                    <p>Jeans under $50</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in2.png" alt="">
+                    <p>Tops under $25</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in3.png" alt="">
+                    <p>Dresses Under $30</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/4in4.png" alt="">
+                    <p>Shoes Under</p>
+                </div>
+            </div>
+            <a href="#">Explore products in Kitchen</a>
+        </div>
+
+        <!-- Card 8: Fashion Trends -->
+        <div class="grid-card">
+            <h1>Fashion trends you like</h1>
+            <br>
+            <div class="grid-4-container">
+                <div class="grid-item">
+                    <img src="img/2nd4in1.png" alt="">
+                    <p>Backpacks</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in2.png" alt="">
+                    <p>Electronics</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in3.png" alt="">
+                    <p>Stationery</p>
+                </div>
+                <div class="grid-item">
+                    <img src="img/2nd4in4.png" alt="">
+                    <p>Fashion</p>
+                </div>
+            </div>
+            <a href="#">Shop home products</a>
+        </div>
+
+    </div>
+
+<!-- Slider Product Section -->
+
+
+<div id="slpr-cstm-div">
+
+<div id="slpr-main-div">
+
+    <h3 id="slpr-selling-text">Top Sell In This Month</h3>
+
+<div class="slpr-imgs">
+    <img src="img/slpr-img1.jpg" alt="">
+    <img src="img/slpr-img2.jpg" alt="">
+    <img src="img/slpr-img3.jpg" alt="">
+    <img src="img/slpr-img4.jpg" alt="">
+    <img src="img/slpr-img5.jpg" alt="">
+    <img src="img/slpr-img6.jpg" alt="">
+    <img src="img/slpr-img7.jpg" alt="">
+    <img src="img/slpr-img8.jpg" alt="">
+    <img src="img/slpr-img9.jpg" alt="">
+    <img src="img/slpr-img1.jpg" alt="">
+    <img src="img/slpr-img3.jpg" alt="">
+    <img src="img/slpr-img8.jpg" alt="">
+    <img src="img/slpr-img4.jpg" alt="">
+    <img src="img/slpr-img7.jpg" alt="">
+    <img src="img/slpr-img2.jpg" alt="">
+    <img src="img/slpr-img1.jpg" alt="">
+    
+</div>
+
+
+</div>
+
+</div>
+
+<!-- Footer Area Started -->
+
+
+<div id="recomeded-section-div">
+
+    <hr id="line1">
+<div id="recomeded-section"> 
+    <h2>See Personalized recommendations</h2>
+
+    <button>Sign in</button>
+
+    <p>new Coustumer? <a href="#">Start here</a></p>
+</div>
+<hr id="line2">
+
+</div>
+
+<button id="backBtn">Back to Top</button>
+    
+
+<!-- Amazon recommendations -->
+
+<div id="recommendations">
+
+    <div id="under-recommed">
+
+            <div>
+        <ul>
+<h3>Get to know us</h3>
+            <li><a href="#">Carers</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">About Amazon</a></li>
+            <li><a href="#">Investor Realtions</a></li>
+            <li><a href="#">Amazon Advices</a></li>
+            <li><a href="#">Amazon Devices</a></li>
+            <li><a href="#">Amazon Science</a></li>
+        </ul>
+    </div>
+
+
+<div>
+    <ul>
+        <h3>Make Money With Us</h3>
+       <li><a href="#">Sell products on Amazon</a></li>
+          <li><a href="#">Sell on Amazon Business</a></li>
+          <li><a href="#">Sell apps on Amazon</a></li>
+          <li><a href="#">Become an Affiliate</a></li>
+          <li><a href="#">Advertise Your Products</a></li>
+          <li><a href="#">Self-Publish with Us</a></li>
+          <li><a href="#">Host an Amazon Hub</a></li>
+          <li><a href="#">› See More Make Money with Us</a></li>
+    </ul>
+</div>
+
+<div class="">
+        <h3>Amazon Payment Products</h3>
+        <ul>
+          <li><a href="#">Amazon Business Card</a></li>
+          <li><a href="#">Shop with Points</a></li>
+          <li><a href="#">Reload Your Balance</a></li>
+          <li><a href="#">Amazon Currency Converter</a></li>
+        </ul>
+      </div>
+
+      <div class="">
+        <h3>Let Us Help You</h3>
+        <ul>
+          <li><a href="#">Your Account</a></li>
+          <li><a href="#">Your Orders</a></li>
+          <li><a href="#">Shipping Rates & Policies</a></li>
+          <li><a href="#">Returns & Replacements</a></li>
+          <li><a href="#">Manage Your Content and Devices</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+</div>
+</div>
+<!-- Amazon language country rs -->
+
+<div id="amazon-lng-Cr-rs"> 
+
+    <img src="img/amazonlogo.png" alt="" >
+    <div class="amzlgcrrs">
+        English
+    </div>
+
+    <div class="amzlgcrrs">
+        <span>PKR</span>
+        <p>pakistani rupees</p>
+    </div>
+
+    <div class="amzlgcrrs">
+        United States
+    </div>
+
+</div>
+
+<!-- Footer area -->
+
+<div class="amz-keywrd">
+    <div class="amz-ft">
+      
+      <a href="#" class="amz-ft-service-item">
+        <h4>Amazon Music</h4>
+        <p>Stream millions<br>of songs</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Amazon Ads</h4>
+        <p>Reach customers<br>wherever they<br>spend their time</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>6pm</h4>
+        <p>Score deals<br>on fashion brands</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>AbeBooks</h4>
+        <p>Books, art<br>& collectibles</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>ACX</h4>
+        <p>Audiobook<br>Publishing<br>Made Easy</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Sell on Amazon</h4>
+        <p>Start a Selling<br>Account</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Veeqo</h4>
+        <p>Shipping Software<br>Inventory<br>Management</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Amazon Business</h4>
+        <p>Everything For<br>Your Business</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>AmazonGlobal</h4>
+        <p>Ship Orders<br>Internationally</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Amazon Web Services</h4>
+        <p>Scalable Cloud<br>Computing<br>Services</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Audible</h4>
+        <p>Listen to Books &<br>Original<br>Audio<br>Performances</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Box Office Mojo</h4>
+        <p>Find Movie<br>Box Office Data</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Goodreads</h4>
+        <p>Book reviews<br>& recommendations</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>IMDb</h4>
+        <p>Movies, TV<br>& Celebrities</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>IMDbPro</h4>
+        <p>Get Info<br>Entertainment<br>Professionals Need</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Kindle Direct Publishing</h4>
+        <p>Indie Digital &<br>Print Publishing<br>Made Easy</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Prime Video Direct</h4>
+        <p>Video Distribution<br>Made Easy</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Shopbop</h4>
+        <p>Designer<br>Fashion Brands</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Woot!</h4>
+        <p>Deals and<br>Shenanigans</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Zappos</h4>
+        <p>Shoes &<br>Clothing</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Ring</h4>
+        <p>Smart Home<br>Security Systems</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>eero WiFi</h4>
+        <p>Stream 4K Video<br>in Every Room</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Blink</h4>
+        <p>Smart Security<br>for Every Home</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>Neighbors App</h4>
+        <p>Real-Time Crime<br>& Safety Alerts</p>
+      </a>
+
+      <a href="#" class="amz-ft-service-item">
+        <h4>PillPack</h4>
+        <p>Pharmacy<br>Simplified</p>
+      </a>
+
+
+<div id="footerTags">
+
+<p id="footerlinks">
+    <a href="#">Conditon of use</a>
+    <a href="#">Privacy Notice</a>
+    <a href="#">Coustumer Health Data Privacya</a>
+    <a href="#">Your Ads Privacy Choices</a>
+
+</p>
+
+<p id="ft-tagline">
+    © 1996-2026, Amazon.com, Inc. or its affiliates
+</p>
+
+</div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
