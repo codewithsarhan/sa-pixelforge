@@ -20,6 +20,8 @@ body {
     align-items: center;
     padding: 0 80px;
     gap: 15px;
+    position: fixed;
+    z-index: 999;
 }
 
 #navBar img {
@@ -756,4 +758,32 @@ body {
     100% {
         transform: translateX(-50%);
     }
+}
+
+.pr-tool-text-sec{
+
+
+width: 100%;
+display: flex;
+text-align: start;
+justify-content: center;
+
+
+}
+
+.pr-tool-text{
+
+color: #8A8F98;
+font-family: Arial, Helvetica, sans-serif;
+width: 100%;
+max-width: 1000px;
+font-size: 1.9rem;
+padding: 50px;
+
+}
+
+.pr-tool-text strong{
+
+color: white;
+
 }
