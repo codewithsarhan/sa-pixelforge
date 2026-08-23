@@ -864,7 +864,7 @@ body {
 
     color: rgba(255, 255, 255, 0.226);
     transition: all 0.4s ease;
-     padding: 10px;
+    padding: 10px;
 }
 
 .graphic-box:hover {
@@ -883,21 +883,723 @@ body {
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-.card {
+    .card {
 
-width: 100%;
-max-width: 320px;
-height: auto;
-min-height:400px;
-background-color: rgba(255, 255, 255, 0.027);
-border-radius: 5px;
-margin: 3px;
-padding: 10px;
-font-size: 1rem;
-border: none;
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 400px;
+        background-color: rgba(255, 255, 255, 0.027);
+        border-radius: 5px;
+        margin: 3px;
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+
+    }
 
 }
+
+.changeLog-sec {
+
+    padding: 100px 0 100px 0;
+
+
+}
+
+
+.changeLog-head {
+
+    color: white;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 0 0 50px;
+
+}
+
+.step-centerlize {
+
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    max-width: 1300px;
+
+}
+
+.stepper-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.step {
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #1A1B1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.step-inner {
+
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #62666D;
+
+
+
+}
+
+
+.step.active {
+
+    background-color: #1F1112;
+
+
+}
+
+.step.active .step-inner {
+
+    background-color: #EB5757;
+
+}
+
+.line {
+
+    flex-grow: 1;
+    height: 1px;
+    background-color: gray;
+
+}
+
+.changeLog-plan {
+
+    display: flex;
+    gap: 30px;
+    padding: 0 50px 0 50px;
+
+}
+
+.plans {
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+
+
+.plans h2 {
+
+    color: rgba(255, 255, 255, 0.601);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    transition: all 0.2s ease;
+
+
+}
+
+.plans p {
+
+    color: rgba(255, 255, 255, 0.297);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+    line-height: 25px;
+    transition: all 0.2s ease;
+
+
+}
+
+
+
+.plans span {
+
+    color: rgba(255, 255, 255, 0.133);
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.2s ease;
+
+
+}
+
+.plans:hover h2 {
+
+    color: rgba(255, 255, 255, 0.774);
+
+
+}
+
+.plans:hover p {
+
+    color: rgba(255, 255, 255, 0.486);
+
+
+}
+
+
+.plans:hover span {
+
+    color: rgba(255, 255, 255, 0.313);
+
+
+}
+
+.viw-all-btn {
+
+
+    color: rgba(255, 255, 255, 0.33);
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0 0 50px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.viw-all-btn:hover {
+
+    color: rgba(255, 255, 255, 0.716);
+
+
+}
+
+@media(max-width:1440px) {
+
+
+    .step-centerlize {
+
+        width: 100%;
+        max-width: 1440px;
+        justify-content: center;
+    }
+
+    .stepper-container {
+        max-width: 94%;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .step-centerlize {
+
+        width: 100%;
+        max-width: 1024px;
+        justify-content: center;
+
+    }
+
+    .stepper-container {
+        max-width: 92%;
+    }
+}
+
+/* 2. Tablets (768px) */
+@media (max-width: 768px) {
+
+
+
+    .step-centerlize {
+
+        width: 100%;
+        max-width: 768px;
+        justify-content: center;
+
+    }
+
+    .stepper-container {
+        max-width: 95%;
+    }
+
+
+    .changeLog-plan {
+        padding: 0 20px;
+    }
+
+    .changeLog-head,
+    .viw-all-btn {
+        padding-left: 20px;
+    }
+}
+
+/* 3. Mobile Screens (425px) */
+@media (max-width: 425px) {
+
+    .stepNone,
+    .plans-None {
+        display: none;
+    }
+
+    .step-centerlize {
+
+        justify-content: center;
+        width: 100%;
+        max-width: 425px;
+
+    }
+
+    .stepper-container {
+
+        max-width: 94%;
+
+    }
+
+    .changeLog-plan {
+        width: 100%;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .plans-active {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 4. Small Mobile Screens (375px) */
+@media (max-width: 375px) {
+    .changeLog-sec {
+        display: none;
+    }
+}
+
+
+/* Card Section */
+
+.centralize-cards {
+
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+
+}
+
+
+.cards-main-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 540px;
+    max-height: auto;
+    width: 90%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cards-main-section::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle at 0 0,
+            rgba(128, 128, 128, 0.165) -100%,
+            rgba(128, 128, 128, 0) 70%);
+    border-top-left-radius: 10px;
+    z-index: -1;
+}
+
+
+.sec-fr-crd {
+    max-width: 100%;
+    width: 700px;
+    height: 470px;
+    max-height: auto;
+
+    background-color: #E4ECFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 260px;
+
+}
+
+.sec-sc-crd {
+
+
+    max-width: 100%;
+    width: 420px;
+    height: 470px;
+    max-height: auto;
+
+    background-color: #EBF923;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+
+}
+
+
+.upperlogo-disc {
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 0 0 20px;
+
+
+}
+
+.upperlogo-disc h3 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.upperlogo-disc p {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+
+}
+
+.growth-icn {
+
+    font-size: 30px;
+
+}
+
+
+.sec-sc-crd-disc {
+
+
+
+    font-size: 28px;
+    padding: 30px 0 0 25px;
+    text-align: justify;
+    width: 100%;
+    max-width: 300px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+.sec-fr-crd-disc {
+
+
+    font-size: 30px;
+    padding: 30px 0 0 40px;
+    text-align: justify;
+    width: 100%;
+    max-width: 600px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.openai-disc-icn {
+
+    padding: 0 0 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+}
+
+.openai-icn {
+
+    font-size: 40px;
+    border-right: 1px solid rgba(128, 128, 128, 0.256);
+    padding: 0 60px 0 0;
+
+}
+
+.openai-disc h3 {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.openai-disc p {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.33);
+
+}
+
+.center-linear-growth-sec {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 100px 0;
+
+}
+
+.linear-growth-sec {
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.linear-growth-disc {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+
+}
+
+.linear-growth-disc span {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.customer-service {
+
+    display: flex;
+
+    align-items: center;
+    gap: 10px;
+    color: gray;
+    transition: all 0.2s ease;
+}
+
+.customer-service h3 {
+
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.customer-service:hover {
+
+    color: white;
+
+}
+
+
+@media(max-width:1440px) {
+
+    .cards-main-section {
+
+        width: 80%;
+    }
+
+
+    .linear-growth-sec {
+
+        width: 77%;
+
+    }
+
+    .customer-service {
+
+        gap: 5px;
+
+    }
+
+}
+
+@media(max-width:1024px) {
+
+
+    .cards-main-section {
+
+
+        width: 95%;
+
+    }
+
+
+
+    .linear-growth-sec {
+
+        width: 90%;
+
+    }
+
+    .customer-service {
+
+        gap: 5px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .cards-main-section {
+
+        max-width: 95%;
+
+
+    }
+
+    .sec-fr-crd {
+
+        gap: 180px;
+
+    }
+
+    .sec-fr-crd-disc {
+
+        width: 90%;
+        font-size: 28px;
+
+    }
+
+    .sec-sc-crd {
+
+        gap: 190px;
+
+    }
+
+    .sec-sc-crd-disc {
+
+        width: 90%;
+        font-size: 25px;
+
+    }
+
+
+    .linear-growth-sec {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .linear-growth-disc {
+
+        width: 70%;
+
+    }
+
+}
+
+@media(max-width:425px) {
+
+    .cards-main-section {
+
+        display: none;
+
+    }
+
+    .linear-growth-sec {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .linear-growth-disc {
+
+        width: 50%;
+        font-size: 12px;
+
+    }
+
+}
+
+
+
+@media(max-width:375px) {
+
+    .cards-main-section {
+
+        display: none;
+
+    }
+
+    .linear-growth-sec {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding: 20px 0 0 0;
+
+    }
+
+    .linear-growth-disc {
+
+        width: 50%;
+        font-size: 12px;
+
+    }
+
+    .customer-service i {
+
+        padding: 4px 0 0 0;
+
+    }
+
+
+}
+
+@media(max-width:320px) {
+
+    .cards-main-section {
+
+        display: none;
+
+    }
+
+    .linear-growth-sec {
+
+        width: 90%;
+        display: flex;
+        align-items: center;
+        padding: 20px 0 0 0;
+
+    }
+
+    .linear-growth-disc {
+
+        width: 40%;
+        font-size: 12px;
+        text-align: justify;
+
+    }
+
+
+
+    .customer-service h3,
+    i {
+
+        font-size: 12px;
+
+    }
+
+    .customer-service i {
+
+        padding: 2px 0 0 0;
+
+    }
+
+
 
 }
