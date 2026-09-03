@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+header{
+
+border-bottom: 1px solid rgba(128, 128, 128, 0.282);
+
+}
+
 .nav-center {
   display: flex;
   justify-content: center;
@@ -13,39 +19,53 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1200px;
   height: 100%;
   justify-content: space-between;
-  margin: 10px 20px 10px 20px;
-  padding: 1px 20px 1px 20px;
+  margin: 7px;
+  padding: 12px 24px;
   border-radius: 5px;
   transition: all 0.3s ease;
   background-color: transparent;
+  gap: 20px;
 }
 
 .nav-section:hover {
   background-color: white;
   box-shadow:
-    rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    #11111a1a 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .nav-section ul {
   display: flex;
-  gap: 70px;
   align-items: center;
 }
 
 .stripe-nm-svg {
   height: 60px;
   width: 60px;
+  transition: all 0.2s ease;
+  padding: 0 0 0 20px;
+}
+
+.stripe-nm-svg:hover {
+  opacity: 0.5;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+}
+
+.nav-link-main-sec{
+
+display: flex;
+align-items: center;
+gap: 50px;
+padding: 0 0 0 40px;
+
 }
 
 .nav-links a {
@@ -68,7 +88,7 @@
   color: black !important;
 }
 
-.nav-links a:hover .fa-solid {
+.nav-links a:hover .nv-links-icn-updwn {
   transform: rotate(180deg);
 }
 
@@ -80,22 +100,24 @@
   color: black;
 }
 
-.fa-solid {
+.nv-links-icn-updwn {
   transition: all 0.05s ease;
 }
 
-.nv-links:hover .fa-solid {
+.nv-links:hover .nv-links-icn-updwn{
   transform: rotate(180deg);
 }
 
 .nav-btns {
   display: flex;
   gap: 20px;
+  margin-left: auto;
+  padding: 0 50px 0 0;
 }
 
 .sign-in-btn {
   height: 40px;
-  width: 90px;
+   padding: 8px 16px;
   border-radius: 5px;
   border: 1px solid rgba(156, 151, 151, 0.126);
   font-family: Arial, Helvetica, sans-serif;
@@ -104,28 +126,293 @@
   transition: all 0.4s ease;
 }
 
-
-
-.nav-section:hover .sign-in-btn{
-
-border: 1px solid #543afd44;
-color: #533afd;
-
+.nav-section:hover .sign-in-btn {
+  border: 1px solid #543afd44;
+  color: #533afd;
 }
 
 .nav-btns .sign-in-btn:hover {
   color: #0c0a10;
   border: 1px solid #070018;
+}
+
+.sign-up-btn {
+  height: 40px;
+  width: 150px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #533afd;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+
+.sign-up-btn:hover{
+
+background-color: #4032C8;
+
+
+}
+
+
+
+.sign-up-btn:hover .lin-arrw{
+
+display: inline-block !important ;
+
+
+
+}
+
+.sign-up-btn:hover .wt-ot-lin-arrw{
+
+display: none;
+
+}
+
+.lin-arrw{
+
+display: none !important ;
+
+
+
+}
+
+.navBtns-links-Btn{
+
+  padding: 10px;
+  font-size: 16px;
+  color: blue;
+  background-color: rgba(191, 190, 190, 0.111);
+  border: none;
+  border-radius: 5px;
+  display: none;  
   
 }
 
 
-.sign-up-btn {
-  height: 40px;
+
+
+
+
+@media  (max-width : 768px) {
+  
+
+.nav-link-main-sec{
+
+display: none;
+
+}
+
+.nav-btns{
+
+display: none;
+
+}
+
+.navBtns-links-Btn{
+
+display: inline-block !important;
+  
+}
+
+.nav-btns-links-sec{
+
+padding: 0 30px 0 0;
+
+}
+
+
+.nav-section {
+    justify-content: space-between;
+  }
+
+
+}
+
+
+
+
+.getStarted-btn{
+
+
+ height: 40px;
   width: 150px;
   border-radius: 5px;
   border: none;
   color: white;
   background-color: #533afd;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
 }
+
+
+.getStarted-btn:hover{
+
+background-color: #4032C8;
+
+
+}
+
+
+
+.getStarted-btn:hover .lin-arrw{
+
+display: inline-block !important ;
+
+
+
+}
+
+.getStarted-btn:hover .wt-ot-lin-arrw{
+
+display: none;
+
+}
+
+
+
+
+.signUp-section{
+
+width: 100%;
+display: flex;
+
+}
+
+.signUp-div{
+
+width: 100%;
+max-width: 800px;  
+display: flex;
+flex-direction: column;
+padding: 20px;
+gap: 40px;
+
+}
+
+.gdp-live-run{
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px ;
+}
+
+.gdp-live-run span{
+
+color: gray;
+font-family: 'Times New Roman', Times, serif;
+
+}
+
+.gdb-disc{
+
+font-size: 35px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: start;
+font-weight: 400;
+
+}
+
+.gdb-discLi1{
+
+color: black;
+
+}
+
+.gdb-discLi2{
+
+color: #40668D;
+display: none;
+
+}
+
+.btnSpan{
+
+display: flex;
+align-items: center;
+gap: 20px;
+
+}
+
+.signUpWith-google{
+
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 1px solid rgba(0, 0, 255, 0.242);
+padding: 9px;
+color: #0000ff8b ;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 600;
+background-color: #ffff;
+border-radius: 5px;
+
+}
+
+.signUpWith-google:hover{
+
+color: #0000ffbe ;
+border: 1px solid rgba(0, 0, 255, 0.571);
+
+
+}
+
+.google-svg{
+
+height: 17px;
+width: 17px;
+
+}
+
+
+.globalCmmrce-Section{
+
+background-color: #F8FAFD;
+width: 100%;
+max-width: 100%;
+
+  
+}
+
+
+
+
+.main-section-web{
+
+  border-left: 1px solid rgba(128, 128, 128, 0.267);
+  border-right: 1px solid rgba(128, 128, 128, 0.267) ;
+  margin: 0 20px 0 20px;
+
+}
+
+
+@media  (min-width : 640px) {
+
+
+.gdb-discLi2{
+
+display: inline-block;
+
+}
+
+.signUp-div{
+
+padding: 70px 0 0 100px;
+
+}
+
+
+}
+
 
